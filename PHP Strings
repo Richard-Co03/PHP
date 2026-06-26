@@ -1,0 +1,15 @@
+COMMANDS:
+
+
+NOTE: works the same way as in C++ in terms of: string[1] gets a character of the string.
+ 
+strlen(string_var);       -> gets the size of the string
+strtoupper (string_var);  -> Capitalizes the string
+strtolower (string_var);  -> Lower case the string
+str_replace()             -> replace txt /!\ look further into this
+mb_substr() 
+
+
+"" -> Allows variables
+'' -> Literal Text
+.  -> Join Strings

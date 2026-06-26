@@ -1,1 +1,127 @@
+-SYNTAX
+
+DEV COMMENTS:
+// 
+/**/
+#
+
+<?php ...codeHere... ?> -> the same as C++ main, unlike it literaly eveything will go in here
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+-VARIABLES:
+
+$ -> Variable designation (Every time you create or use a variable you use it, it serves to ID something as a variable not just inicialize it)
+|-> $Name_of_Variable  = 25;
+|-> $Name_of_Variable2 = "this is a string";
+|-> $Name_of_Variable3 = null;
+
+const name_of_Variable4 = 123.1 -> a const variable does not use $
+
+NOTE: A variable can be of any type all the time, a variable that has been given an int can later become a string for example
+NOTE: Devs may use camelCase on variable names, as in the names are based on what the variable is for and it uses thisName kind of format, starting with lower case and upper case later
+
+COMMANDS:
+isset($var);   -> Checks if a variable exists
+empty($var);   -> Checks if a variable is empty
+unset($var);   -> Deletes a variable
+gettype($var); -> Checks what data type the variable is
+is_int($var);  -> Self Explanatory, it checks if $var is of int data type
+is_string($var);
+is_bool($var);
+in_array($var);
+
+
+CONVERSION DATA TYPES
+$var = (int)"25"; -> will turn 25 from a string into an integer
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-PRINTING:
+
+echo "";
+|-> echo "Hello $Name_of_Variable"; -> prints: Hello 25
+|-> echo "Hello", " ", "World!";
+|-> echo 'Hello $Name_of_Variable'; -> prints: Hello $Name_of_Variable ('' it prints literaly)
+|-> echo $Name_of_Variable;         -> Prints: 25
+
+print ""; -> It's more limited but returns 1;
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-ARRAYS:
+
+NOTE: Basic arrays Works much the same way as C++
+NOTE: In PHP arrays can have several data types at the same time
+
+--MAPPED ARRAYS
+NOTE: PHP has a combination of C++ basic arrays and Maps
+
+$Variable = ["name" => "Kile",
+             "Number" => 25,
+             "stuff" => "blah"]; 
+              |-> Key      |-> Value
+
+COMMANDS:
+$array[] = "something";              -> add to the end of the array
+array_push($array, "this", "that");  -> Add several things to end of array
+array_pop($array);                   -> Remove last item
+array_shift($array);                 -> Remove first item
+unset($array[1]);                    -> Remove Specific index
+is_array("value", $array)            -> Checks if something exists inside an array
+array_search("value", $array);       -> returns index of the value if found
+count($array)                        -> .size()
+array_keys($array)                   -> gets all the keys
+array_values($array)                 -> gets all values
+array_merge($arrayA, $arrayB)        -> Merges the contents of 2 arrays together
+sort($array)                         -> Sort the array ascending
+rsort($array)                        -> sort the array descending
+/!\ Ther are other commands but they seem to requier more advanced knowlage of PHP, check later
+
+----------------------------------------------------------------------------------------------------
+-LOOPS
+NOTE: they have the same syntax as in C++
+---------------------------------------------------------------------------------------------------
+-OPERATORS:
+
+MATH: 
+** -> The power of ( it's .pow() ) $a ** $b -> a to the power of b
+Note: The rest are the same
+
+LOGIC:
+=== -> Must be fully equal in every way
+<>  -> not equal (!= also still works)
+-------------------------------------------------------------------------------------------------
+-CONDITIONS:
+
+Note:Pretty much the same
+if(){}
+elseif(){} -> the else if is together into elseif
+else{}
+
+
+------------------------------------------------------------------------------------------------
+-SCOPES
+
+NOTE: Things are also seperated into scopes, altho much stricter then C++,
+a variable that exists in one scope can not be used in another,
+you have to use functions or something that can be used several times to use those variables.
+
+function name ($var){
+    echo $var;
+}
+name(10); -> prints 10
+
+NOTE: To use global varaiables you either put in into a function or you designate them as such
+|-> global $variable;
+|-> $GLOBALS['varname']; (to use)
+
+
+
+------------------------------------------------------------------------------------------
+
+
+
+
 

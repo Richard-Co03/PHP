@@ -82,7 +82,10 @@ rsort($array)                        -> sort the array descending
 
 ----------------------------------------------------------------------------------------------------
 -LOOPS
-NOTE: they have the same syntax as in C++
+NOTE: they have mostly the same syntax as in C++
+
+foreach ($var as $thisVar){...} -> For each syntax
+
 ---------------------------------------------------------------------------------------------------
 -OPERATORS:
 

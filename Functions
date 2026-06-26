@@ -1,0 +1,7 @@
+NOTE: they work largely the same as in CPP
+
+A few diferences is that you need to actually call: Function inplace of a data type or void and that you can't have two functions with the same name
+unlike in C++ where you can have with the same name but with diferent data type values
+
+EX:
+function Name_of ($var_inputA, $var_inputB) {...code...}

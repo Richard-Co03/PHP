@@ -46,6 +46,7 @@ echo "";
 |-> echo "Hello", " ", "World!";
 |-> echo 'Hello $Name_of_Variable'; -> prints: Hello $Name_of_Variable ('' it prints literaly)
 |-> echo $Name_of_Variable;         -> Prints: 25
+|-> \n                              -> Skip line 
 
 print ""; -> It's more limited but returns 1;
 
